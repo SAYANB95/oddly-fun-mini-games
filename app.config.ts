@@ -1,6 +1,7 @@
 import type { ExpoConfig } from 'expo/config';
 
 const TEST_ANDROID_APP_ID = 'ca-app-pub-3940256099942544~3347511713';
+const TEST_IOS_APP_ID = 'ca-app-pub-3940256099942544~1458002511';
 
 const config: ExpoConfig = {
   name: 'Oddly Fun: Mini Games',
@@ -43,12 +44,18 @@ const config: ExpoConfig = {
       {
         androidAppId:
           process.env.EXPO_PUBLIC_ADMOB_ANDROID_APP_ID || TEST_ANDROID_APP_ID,
+        iosAppId: TEST_IOS_APP_ID,
         delayAppMeasurementInit: true,
         optimizeInitialization: true,
         optimizeAdLoading: true,
       },
     ],
   ],
+  extra: {
+    eas: {
+      projectId: '21fdaf99-2563-4b51-a02f-49213d698320',
+    },
+  },
 };
 
 export default config;
