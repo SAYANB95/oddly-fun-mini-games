@@ -31,7 +31,13 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
+
+# local release artifacts and signing material
+/outputs/
+/credentials/
+/credentials.json
 
 # typescript
 *.tsbuildinfo
