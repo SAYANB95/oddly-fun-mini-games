@@ -6,6 +6,7 @@ const config: ExpoConfig = {
   name: 'Oddly Fun: Mini Games',
   slug: 'oddly-fun-mini-games',
   owner: 'sayanb95',
+  githubUrl: 'https://github.com/SAYANB95/oddly-fun-mini-games',
   version: '1.0.0',
   platforms: ['android'],
   orientation: 'portrait',
